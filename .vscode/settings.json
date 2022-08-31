@@ -7,14 +7,14 @@
   "debug.internalConsoleOptions": "neverOpen",
   "azureFunctions.preDeployTask": "npm prune (functions)",
   "workbench.colorCustomizations": {
-    "activityBar.activeBackground": "#1857a4",
-    "activityBar.background": "#1857a4",
+    "activityBar.activeBackground": "#1f6fd0",
+    "activityBar.background": "#1f6fd0",
     "activityBar.foreground": "#e7e7e7",
     "activityBar.inactiveForeground": "#e7e7e799",
-    "activityBarBadge.background": "#530c2c",
-    "activityBarBadge.foreground": "#e7e7e7",
+    "activityBarBadge.background": "#ee90bb",
+    "activityBarBadge.foreground": "#15202b",
     "commandCenter.border": "#e7e7e799",
-    "sash.hoverBorder": "#1857a4",
+    "sash.hoverBorder": "#1f6fd0",
     "statusBar.background": "#1857a4",
     "statusBar.foreground": "#e7e7e7",
     "statusBarItem.hoverBackground": "#1f6fd0",
@@ -23,7 +23,9 @@
     "titleBar.activeBackground": "#1857a4",
     "titleBar.activeForeground": "#e7e7e7",
     "titleBar.inactiveBackground": "#1857a499",
-    "titleBar.inactiveForeground": "#e7e7e799"
+    "titleBar.inactiveForeground": "#e7e7e799",
+    "statusBar.border": "#1857a4",
+    "titleBar.border": "#1857a4"
   },
   "peacock.remoteColor": "#1857a4"
 }
