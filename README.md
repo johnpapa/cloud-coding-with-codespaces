@@ -23,7 +23,7 @@ Before presenting this demo, be sure to create your own repository from the temp
 
 ## Demo Story
 
-It's a familiar story ...
+Just One More Change ... It's a familiar story ...
 
 You just received an urgent request from your project stakeholders to fix the web app. You need to jump directly into the project and correct a mistake where the site is selling a bag of a 1000 lemons when it's only supposed to be 10 per bag!
 
