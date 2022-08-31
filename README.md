@@ -142,7 +142,7 @@ Compounding the urgency, you need to make the changes and you don't have the loc
    };
    ```
 
-1. Open the browser tab and see your changes worked!
+1. Open the browser tab, refresh, and see your changes worked!
 
    > Copilot just helped you write the code to sort the products directly in Codespaces in the browser.
 
@@ -154,6 +154,18 @@ Compounding the urgency, you need to make the changes and you don't have the loc
 1. Commit your changes and push them to the branch.
 1. Create a new Pull Request.
 1. Review, approve, and merge the pull request to the `main` branch.
+
+### Optional - Deploy to Azure Static Web Apps
+
+### Open the Codespace in your local install of VS Code
+
+1. Click the `Codespaces` icon in the bottom left
+
+1. Choose `Open in VS Code`
+
+1. Accept the confirmation dialogs
+
+> Now you are using VS Code locally to develop with your codespace!
 
 ### Recap
 
