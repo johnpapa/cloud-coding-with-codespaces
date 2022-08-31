@@ -22,13 +22,6 @@ const data = {
       imageClass: 'fas fa-apple-whole fa-3x',
     },
     // add another product here for hot peppers
-    {
-      id: 40,
-      name: 'Hot Peppers',
-      description: 'Bag of 100 hot peppers',
-      quantity: 320,
-      imageClass: 'fas fa-pepper-hot fa-3x',
-    },
   ],
 };
 
