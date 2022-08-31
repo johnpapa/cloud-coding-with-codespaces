@@ -1,41 +1,9 @@
 {
   "routes": [
     {
-      "route": "/api/products/*",
-      "methods": ["GET", "PUT", "POST", "DELETE"],
-      "allowedRoles": ["authenticated"]
-    },
-    {
-      "route": "/api/discounts/*",
-      "allowedRoles": ["preferred"]
-    },
-    {
-      "route": "/api/*",
-      "allowedRoles": ["authenticated"]
-    },
-    {
-      "route": "/logout",
-      "redirect": "/.auth/logout"
-    },
-    {
-      "route": "/deals",
-      "redirect": "/some-legacy-discounts-page.html",
-      "statusCode": 301
-    },
-    {
-      "route": "/.auth/login/aad",
-      "statusCode": "404"
+      "route": "/api/products/*"
     }
   ],
-  "navigationFallback": {
-    "rewrite": "index.html",
-    "exclude": ["/*.{css,scss,js,png,gif,ico,jpg}", "/images/*"]
-  },
-  "responseOverrides": {
-    "404": {
-      "rewrite": "/404.html"
-    }
-  },
   "mimeTypes": {
     ".json": "text/json"
   }
