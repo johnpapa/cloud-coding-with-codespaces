@@ -41,7 +41,7 @@
 
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": "(npm install) ; (cd api && npm install)",
-  "postStartCommand": "(npm run dev) & (cd angular-app && npm run local)",
+  "postStartCommand": "(npm run start) & (npm run local)",
 
   // Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
   "remoteUser": "node"

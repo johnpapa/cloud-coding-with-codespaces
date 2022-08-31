@@ -1,20 +1,21 @@
 # One More Change! @ NgConf 2022
 
-This is a quick project template for demoing Codespaces.
+This is a quick project template for demoing github.dev, Codespaces, Copilot, Azure Static Web Apps, and Visual Studio Code.
 
 ## Top Features
 
 - Start quickly with github.dev: a fast, free and lightweight VS Code editor in the browser
 - Enjoy git integration to create branches and pull requests
-- Continue working on Codespaces to run and debug
+- Continue working on Codespaces to build, run and debug
 - Share your running app by forwarding ports
 - Extend your code with GitHub Copilot
+- Deploy your app to Azure Static Web Apps
 
 ## Setup
 
 Before presenting this demo, be sure to create your own repository from the template, following these instructions:
 
-1. <a target="_blank" href="https://github.com/johnpapa/shopping-for-codespaces/generate">Generate your repository in your organization, by clicking here.</a>
+1. <a target="_blank" href="https://github.com/johnpapa/ngconf-2022/generate">Generate your repository in your organization, by clicking here.</a>
 
    > This will open in a new tab where you can fill out the name and other details
 
@@ -24,7 +25,7 @@ Before presenting this demo, be sure to create your own repository from the temp
 
 It's a familiar story ...
 
-You just received an urgent request from your project stakeholders to fix the web app. You need to jump directly into the project and correct a mistake where the site is selling a bag of a 100 lemons when it's only supposed to be 10 per bag!
+You just received an urgent request from your project stakeholders to fix the web app. You need to jump directly into the project and correct a mistake where the site is selling a bag of a 1000 lemons when it's only supposed to be 10 per bag!
 
 Compounding the urgency, you need to make the changes and you don't have the local development environment with Node.js and all of the required project dependencies. Not to worry though as you know you can use **github.dev** in the browser to make these changes.
 
@@ -32,7 +33,7 @@ Compounding the urgency, you need to make the changes and you don't have the loc
 
 ### Adding the product in github.dev
 
-1. Browse to the repository on GitHub at <https://github.com/johnpapa/shopping-for-codespaces>.
+1. Browse to the repository on GitHub at <https://github.com/johnpapa/ngconf-2022>.
 1. Press `.` and the code instantly opens in **github.dev**, a fast and free lightweight VS Code editor in the browser.
 
     <img src=".docs/github.dev.png" width=600 alt="github.dev">
@@ -42,11 +43,11 @@ Compounding the urgency, you need to make the changes and you don't have the loc
 1. Press `<F1>` to open the command palette.
 1. Type and select `Create New Branch` and name it `fix/products`
 1. Press `<ENTER>` and select `Switch to Branch` and `Leave Site` to refresh to the new branch.
-1. Open the file containing the products in `products.json`.
+1. Open the file containing the products in `product-data.js`.
 1. Edit the description for lemons to the proper quantity of 10 per bag.
 
    ```json
-      "description": "Bag of 100 ripe lemons",
+      "description": "Bag of 1000 ripe lemons",
    ```
 
    to
@@ -59,9 +60,9 @@ Compounding the urgency, you need to make the changes and you don't have the loc
 
 ### Transition to Codespaces to run and debug
 
-> While you're editing the `products.json` file you are communicating with your stakeholders to let them know the change is being made. Since you're in there, they ask if you can add a new entry for a new product, hot peppers! Of course you can do this, but you'll feel more confident if you can build, run and view the app to verify that it works. You decide it's time to run and debug the app.
+> While you're editing the `product-data.js` file you are communicating with your stakeholders to let them know the change is being made. Since you're in there, they ask if you can add a new entry for a new product, hot peppers! Of course you can do this, but you'll feel more confident if you can build, run and view the app to verify that it works.
 
-1. While in the same branch, open the file containing the products in `products.json`.
+1. While in the same branch, open the file containing the products in `product-data.js`.
 1. Add the missing product for hot peppers and save the file.
 
    ```json
@@ -69,19 +70,19 @@ Compounding the urgency, you need to make the changes and you don't have the loc
      "id": 40,
      "name": "Hot Peppers",
      "description": "8 oz package of hot peppers",
-     "quantity": 1,
+     "quantity": 320,
      "imageClass": "fas fa-pepper-hot fa-3x"
    }
    ```
 
 1. Now commit these changes.
-1. You want to see the application run to make sure the hot peppers are displayed, so you press `<F5>` to run and debug the app.
+1. You want to see the application run to make sure the hot peppers are displayed, so you open press `F1` and enter the command `View: Open Terminal` intending to build and run the app. Uh oh, there is no terminal!
 
    > So far we've been working entirely with the files in the browser. But now you need compute power to run the app and debug it. You can seamlessly transition from **github.dev** to the full power of compute in the cloud. Let's see how.
 
 1. Press the button `Continue Working On ...` and then select `Create New CodeSpace` to be transitioned to Codespaces.
 
-   > The browser refreshes and you're now working with compute resources which allow you to run, debug, and use the terminal all with the environment you need in the cloud. It even ran `npm install` to install your dependencies! Let's debug your app.
+   > The browser refreshes and you're now working with compute resources which allow you to run, debug, and use the terminal all with the environment you need in the cloud. It even ran `npm install` to install your dependencies, built and ran your app!
 
    > Note: You're using the default devcontainer for Node.js. You can create a custom devcontainer, by following the link in the terminal comments. But that's for another day.
 
