@@ -58,7 +58,7 @@ Compounding the urgency, you need to make the changes and you don't have the loc
 
 1. This is a simple change so you're comfortable to commit the file changes.
 
-### Transition to Codespaces to run and debug
+### Transition to Codespaces to build and run
 
 > While you're editing the `product-data.js` file you are communicating with your stakeholders to let them know the change is being made. Since you're in there, they ask if you can add a new entry for a new product, hot peppers! Of course you can do this, but you'll feel more confident if you can build, run and view the app to verify that it works.
 
@@ -82,28 +82,17 @@ Compounding the urgency, you need to make the changes and you don't have the loc
 
 1. Press the button `Continue Working On ...` and then select `Create New CodeSpace` to be transitioned to Codespaces.
 
-   > The browser refreshes and you're now working with compute resources which allow you to run, debug, and use the terminal all with the environment you need in the cloud. It even ran `npm install` to install your dependencies, built and ran your app!
+   > The browser refreshes and you're now working with compute resources which allow you to run, debug, and use the terminal all with the environment you need in the cloud. It even ran `npm install` to install your dependencies!
 
    > Note: You're using the default devcontainer for Node.js. You can create a custom devcontainer, by following the link in the terminal comments. But that's for another day.
 
     <img src=".docs/create-codespace.png" width=600 alt="create codespace">
 
-1. Let's open the file `index.js` and set a breakpoint on the line that renders the products.
+1. Now let's run our Angular app with `npm run start` and our API with `npm run local`.
 
-1. Press `<F5>` to debug the app.
+1. Select the `Ports` tab in the Terminal pane.
 
-   > Codespaces recognizes this as a JavaScript application and prompts you for the debugger profile.
-
-1. Select `Node.js` as the profile and the debugger launches the application.
-1. Codespaces prompts you to open the browser to see the running web application, so you press the button `Open in Browser`, which launches the app.
-
-   > You hit the breakpoint you set in Codespaces. You can now debug your application and inspect and change variables.
-
-    <img src=".docs/debug.png" width=600 alt="debug">
-
-1. Remove the breakpoint and let the debugger continue to render the webpage.
-
-   > You notice your hot peppers have been added! Now you want to show the changes to your stakeholders before your merge to the `main` branch, so they can test it and confirm it works for them. You can do this by making your forwarded ports public.
+1. Our app is running on port 4280. Click the `globe` icon to browse to it. We're now building, running, and browsing to our app entirely in the browser in the cloud!
 
 ### Forward your ports publicly to your stakeholders to view them
 
@@ -120,36 +109,40 @@ Compounding the urgency, you need to make the changes and you don't have the loc
 
 ### Sort the products using the help of Copilot
 
-1. Stop the debugger.
 1. Press `<F1>` to open Codespaces' command palette.
 1. Select `View: Show Extensions`
 1. Search for `GitHub Copilot`, press `Install`, and agree to the terms
-1. Open the file `index.js` and put the cursor directly before the `render` code.
+1. Open the file `api/products-get/index.js` and put the cursor directly after the code gets the products.
 1. Type `//` to engage with Copilot
 1. Type `// sort the products by name in ascending order`, and hit `<TAB>` and `<ENTER>` to accept each line.
 1. You're prompted line by line for the code to sort the products. It looks appropriate, so click `<ENTER>` on each line to accept it, until it is complete.
 1. Comment the old line of code to render the products, now that you have replaced it.
 
    ```javascript
-   app.get('/', (req, res) => {
-     // sort the products by name in ascending order
-     let sortedProducts = products.sort((a, b) => {
-       if (a.name < b.name) {
-         return -1;
-       }
-       if (a.name > b.name) {
-         return 1;
-       }
-       return 0;
-     });
-     res.render('index', { products: sortedProducts });
+   const data = require('../shared/product-data');
 
-     // res.render('index', { products });
-   });
+   module.exports = async function (context, req) {
+     try {
+       const products = data.getProducts();
+       // sort the products by name in ascending order
+       products.sort((a, b) => {
+         if (a.name < b.name) {
+           return -1;
+         }
+         if (a.name > b.name) {
+           return 1;
+         }
+         return 0;
+       });
+
+       context.res.status(200).json(products);
+     } catch (error) {
+       context.res.status(500).send(error);
+     }
+   };
    ```
 
-1. Press `<F5>` to debug.
-1. Open the browser and see your changes worked!
+1. Open the browser tab and see your changes worked!
 
    > Copilot just helped you write the code to sort the products directly in Codespaces in the browser.
 
@@ -157,7 +150,7 @@ Compounding the urgency, you need to make the changes and you don't have the loc
 
 ### Merge your changes
 
-1. Stop the debugger.
+1. Stop your app (in the terminals).
 1. Commit your changes and push them to the branch.
 1. Create a new Pull Request.
 1. Review, approve, and merge the pull request to the `main` branch.
