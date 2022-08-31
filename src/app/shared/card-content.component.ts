@@ -9,6 +9,7 @@ import { Component, Input } from '@angular/core';
           <div class="column is-9">
             <div class="name">{{ name }}</div>
             <div class="description">{{ description }}</div>
+            <div class="description">Quantity: {{ quantity }}</div>
           </div>
           <div class="column is-3">
             <i [class]="imageClass" aria-hidden="true"></i>
@@ -21,5 +22,6 @@ import { Component, Input } from '@angular/core';
 export class CardContentComponent {
   @Input() name;
   @Input() description;
+  @Input() quantity;
   @Input() imageClass;
 }

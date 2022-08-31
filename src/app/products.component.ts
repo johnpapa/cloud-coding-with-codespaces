@@ -23,6 +23,7 @@ import { ProductService } from './product.service';
                 <app-card-content
                   [name]="product.name"
                   [description]="product.description"
+                  [quantity]="product.quantity"
                   [imageClass]="product.imageClass"
                 ></app-card-content>
                 <footer class="card-footer">
