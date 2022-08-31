@@ -4,6 +4,10 @@
       "route": "/api/products/*"
     }
   ],
+  "navigationFallback": {
+    "rewrite": "index.html",
+    "exclude": ["/*.{css,scss,js,png,gif,ico,jpg}"]
+  },
   "mimeTypes": {
     ".json": "text/json"
   }
