@@ -65,14 +65,14 @@ Compounding the urgency, you need to make the changes and you don't have the loc
 1. While in the same branch, open the file containing the products in `product-data.js`.
 1. Add the missing product for hot peppers and save the file.
 
-   ```json
-   {
-     "id": 40,
-     "name": "Hot Peppers",
-     "description": "8 oz package of hot peppers",
-     "quantity": 320,
-     "imageClass": "fas fa-pepper-hot fa-3x"
-   }
+   ```javascript
+    {
+      id: 40,
+      name: 'Hot Peppers',
+      description: '8 oz package of hot peppers',
+      quantity: 711,
+      imageClass: 'fas fa-pepper-hot fa-3x'
+    }
    ```
 
 1. Now commit these changes.
