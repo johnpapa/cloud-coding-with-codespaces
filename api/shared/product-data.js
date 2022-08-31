@@ -22,6 +22,14 @@ const data = {
       imageClass: 'fas fa-apple-whole fa-3x',
     },
     // add another product here for hot peppers
+    {
+      id: 40,
+      name: 'Hot Peppers',
+      description: '8 oz package of hot peppers',
+      quantity: 711,
+      imageClass: 'fas fa-pepper-hot fa-3x'
+    }
+
   ],
 };
 
