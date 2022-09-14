@@ -1,4 +1,6 @@
-# One More Change! @ NgConf 2022
+# Cloud Computing with Codespaces
+
+First seen in the presentation **One More Change!** @ [NgConf 2022](https://2022.ng-conf.org/)
 
 This is a quick project template for demoing github.dev, Codespaces, Copilot, Azure Static Web Apps, and Visual Studio Code.
 
