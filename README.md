@@ -143,6 +143,7 @@ Compounding the urgency, you need to make the changes and you don't have the loc
      }
    };
    ```
+> Optional: Enter `<^> + <ENTER>` to see a list of suggestions that Copilot synthesizes for you!  This requires enabling CodeLens in Settings.
 
 1. Open the browser tab, refresh, and see your changes worked!
 
