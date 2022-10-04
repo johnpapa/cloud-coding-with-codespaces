@@ -78,7 +78,7 @@ Compounding the urgency, you need to make the changes and you don't have the loc
    ```
 
 1. Now commit these changes.
-1. You want to see the application run to make sure the hot peppers are displayed, so you open press `F1` and enter the command `View: Open Terminal` intending to build and run the app. Uh oh, there is no terminal!
+1. You want to see the application run to make sure the hot peppers are displayed, so you open press `F1` and enter the command `View: Toggle Terminal` intending to build and run the app. Uh oh, there is no terminal!
 
    > So far we've been working entirely with the files in the browser. But now you need compute power to run the app and debug it. You can seamlessly transition from **github.dev** to the full power of compute in the cloud. Let's see how.
 
@@ -154,8 +154,10 @@ Compounding the urgency, you need to make the changes and you don't have the loc
 
 1. Stop your app (in the terminals).
 1. Commit your changes and push them to the branch.
-1. Create a new Pull Request.
-1. Review, approve, and merge the pull request to the `main` branch.
+1. Open the Command Palette `<F1>`
+1. Type and select `GitHub Pull Requests: Create Pull Request`
+1. Click the `Create` button to create the Pull Request
+1. Optionally, review, approve, and merge the pull request to the `main` branch.
 
 ### Optional - Deploy to Azure Static Web Apps
 
