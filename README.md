@@ -159,6 +159,8 @@ Compounding the urgency, you need to make the changes and you don't have the loc
 
 ### Optional - Deploy to Azure Static Web Apps
 
+> You can browse to <https://brave-tree-0bfbe121e.1.azurestaticapps.net>
+
 ### Open the Codespace in your local install of VS Code
 
 1. Click the `Codespaces` icon in the bottom left
