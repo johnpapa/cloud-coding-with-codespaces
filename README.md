@@ -17,7 +17,7 @@ This is a project template for demonstrating github.dev, Codespaces, Co-pilot, A
 
 Before presenting this demo, be sure to create your own repository from the template, following these instructions:
 
-1. <a target="_blank" href="https://github.com/johnpapa/ngconf-2022/generate">Generate your repository in your organization, by clicking here.</a>
+1. <a target="_blank" href="https://github.com/johnpapa/cloud-coding-with-codespaces/generate">Generate your repository in your organization, by clicking here.</a>
 
    > This will open in a new tab where you can fill out the name and other details
 
@@ -35,7 +35,7 @@ Compounding the urgency, you need to make the changes and you don't have the loc
 
 ### Adding the product in github.dev
 
-1. Browse to the repository on GitHub at <https://github.com/johnpapa/ngconf-2022>.
+1. Browse to the repository on GitHub at <https://github.com/johnpapa/cloud-coding-with-codespaces>.
 1. Press `.` and the code instantly opens in **github.dev**, a fast and free lightweight VS Code editor in the browser.
 
     <img src=".docs/github.dev.png" width=600 alt="github.dev">
