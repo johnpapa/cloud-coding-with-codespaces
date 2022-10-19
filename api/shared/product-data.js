@@ -10,7 +10,7 @@ const data = {
     {
       id: 20,
       name: 'Lemons',
-      description: 'Bag of 1000 ripe lemons',
+      description: 'Bag of 10 ripe lemons',
       quantity: 100,
       imageClass: 'fas fa-lemon fa-3x',
     },
