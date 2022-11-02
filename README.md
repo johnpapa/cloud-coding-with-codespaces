@@ -13,6 +13,10 @@ This is a project template for demonstrating github.dev, Codespaces, Co-pilot, A
 - Extend your code with GitHub Copilot
 - Deploy your app to Azure Static Web Apps
 
+## What You Learn
+
+<img src=".docs/learn.png" width=600 alt="you learn github.dev, codespaces, and copilot">
+
 ## Setup
 
 Before presenting this demo, be sure to create your own repository from the template, following these instructions:
