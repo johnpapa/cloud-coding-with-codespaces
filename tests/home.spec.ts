@@ -9,7 +9,7 @@ test('Homepage has List with specified title', async ({ page }) => {
   await expect(listTitle).toHaveText("My List");
 });
 
-test('Homepage has List with 3 items', async ({ page }) => {
-  const items = page.locator('.card');
-  await expect(items).toHaveCount(3);
+test('Homepage has List with at least 3 items', async ({ page }) => {
+  const numItems = await page.locator('.card').count();
+  expect(numItems).toBeGreaterThanOrEqual(3);
 });
