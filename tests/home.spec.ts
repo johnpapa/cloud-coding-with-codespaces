@@ -10,6 +10,8 @@ test('Homepage has List with specified title', async ({ page }) => {
 });
 
 test('Homepage has List with at least 3 items', async ({ page }) => {
-  const numItems = await page.locator('.card').count();
-  expect(numItems).toBeGreaterThanOrEqual(3);
+  // Uses poll to get greaterThan 
+  // See: https://github.com/microsoft/playwright/issues/10367
+  const list=page.locator('.card');
+  await expect.poll( () => list.count() ).toBeGreaterThanOrEqual(3);
 });
