@@ -1,20 +1,15 @@
 import { test, expect } from '@playwright/test';
 
-test('homepage has title and links to intro page', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+test.beforeEach(async ({ page }) => {
+  await page.goto('/');
+});
 
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
+test('Homepage has List with specified title', async ({ page }) => {
+  const listTitle=page.locator('.content-title-group h2');
+  await expect(listTitle).toHaveText("My List");
+});
 
-  // create a locator
-  const getStarted = page.getByRole('link', { name: 'Get started' });
-
-  // Expect an attribute "to be strictly equal" to the value.
-  await expect(getStarted).toHaveAttribute('href', '/docs/intro');
-
-  // Click the get started link.
-  await getStarted.click();
-
-  // Expects the URL to contain intro.
-  await expect(page).toHaveURL(/.*intro/);
+test('Homepage has List with 3 items', async ({ page }) => {
+  const items = page.locator('.card');
+  await expect(items).toHaveCount(3);
 });
