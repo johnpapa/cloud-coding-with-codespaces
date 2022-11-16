@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve --proxy-config proxy.conf.json",
     "build": "ng build --configuration production",
-    "test": "npx playwright install chromium && npx playwright test",
+    "test": "npx playwright install --with-deps && npx playwright test",
     "lint": "ng lint",
     "local-public": "npx @azure/static-web-apps-cli start ./dist/angular-app --api-location http://localhost:7071",
     "local-x": "npx @azure/static-web-apps-cli start http://localhost:4200 --api-location http://localhost:7071 --verbose=silly",
