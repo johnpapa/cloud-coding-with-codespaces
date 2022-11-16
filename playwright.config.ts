@@ -39,20 +39,18 @@ const config: PlaywrightTestConfig = {
     },
 
     // Uncomment to test against other browsers
-    /*
-    {
-      name: 'firefox',
-      use: {
-        ...devices['Desktop Firefox'],
-      },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: {
+    //     ...devices['Desktop Firefox'],
+    //   },
+    // },
     {
       name: 'webkit',
       use: {
         ...devices['Desktop Safari'],
       },
     },
-    */
 
     /* Test against mobile viewports. */
     // {
@@ -86,7 +84,7 @@ const config: PlaywrightTestConfig = {
   /* Folder for test artifacts such as screenshots, videos, traces, etc. */
   // outputDir: 'test-results/',
 
-  /* Run your local dev server before starting the tests 
+  /* Run your local dev server before starting the tests
    See: https://playwright.dev/docs/test-advanced#launching-a-development-web-server-during-the-tests
   */
   webServer: [
