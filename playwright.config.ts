@@ -6,7 +6,7 @@ const config: PlaywrightTestConfig = {
   testDir: './tests',
   timeout: 30 * 1000,
   expect: {
-    timeout: 5000
+    timeout: 5000,
   },
 
   /* Run tests in files in parallel */
@@ -23,7 +23,8 @@ const config: PlaywrightTestConfig = {
   /* See: https://playwright.dev/docs/api/class-testoptions. */
   use: {
     actionTimeout: 0,
-    trace: 'on-first-retry',
+    // trace: 'on-first-retry',
+    trace: 'on',
 
     /* See: https://playwright.dev/docs/test-advanced */
     baseURL: 'http://localhost:4280/home',
@@ -99,7 +100,7 @@ const config: PlaywrightTestConfig = {
       port: 4280,
       timeout: 120 * 1000,
       reuseExistingServer: !process.env.CI,
-    }
+    },
   ],
 };
 
