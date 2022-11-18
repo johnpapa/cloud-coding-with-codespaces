@@ -181,3 +181,10 @@ Compounding the urgency, you need to make the changes and you don't have the loc
 ### Recap
 
 > Let's look back at what we were able to accomplish, all without having the local dev environment. You can edit files, create a new branch, and merge a PR all from **github.dev** in the browser. Then when you need a robust dev invironment to run your application, you can continue working on it in Codespaces. Here you can debug it and use tools like GitHub Copilot to help write the code your app needs, all from within the browser.
+
+
+## Credits
+
+ - Thanks to [Nitya Narasimhan](https://github.com/nitya) for contributing the [Playwright](https://playwright.dev) Testing integration.
+
+
