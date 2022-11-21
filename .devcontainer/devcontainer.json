@@ -25,16 +25,17 @@
     "vscode": {
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
-        "ms-azuretools.vscode-azurefunctions",
-        "dbaeumer.vscode-eslint",
-        "johnpapa.vscode-peacock",
-        "johnpapa.angular-essentials",
-        "esbenp.prettier-vscode",
-        "github.vscode-pull-request-github",
-        "ms-vscode.azure-account",
-        "ms-azuretools.vscode-azureresourcegroups",
-        "ms-azuretools.vscode-azurestaticwebapps"
-      ]
+		"ms-azuretools.vscode-azurefunctions",
+		"dbaeumer.vscode-eslint",
+		"johnpapa.vscode-peacock",
+		"johnpapa.angular-essentials",
+		"esbenp.prettier-vscode",
+		"github.vscode-pull-request-github",
+		"ms-vscode.azure-account",
+		"ms-azuretools.vscode-azureresourcegroups",
+		"ms-azuretools.vscode-azurestaticwebapps",
+		"ms-playwright.playwright"
+	]
     }
   },
 
