@@ -37,7 +37,7 @@
     "@angular/cli": "^14.2.1",
     "@angular/compiler-cli": "^14.2.0",
     "@angular/language-service": "^14.2.0",
-    "@playwright/test": "^1.27.1",
+    "@playwright/test": "^1.28.0",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^16.0.0",
     "jasmine-core": "~4.0.0",
