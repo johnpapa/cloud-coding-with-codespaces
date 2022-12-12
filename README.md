@@ -13,9 +13,9 @@ This is a project template for demonstrating github.dev, Codespaces, Co-pilot, A
 - Extend your code with GitHub Copilot
 - Deploy your app to Azure Static Web Apps
 
-## What You Learn
+## The Story and What You'll Learn
 
-<img src=".docs/learn.png" width=600 alt="you learn github.dev, codespaces, and copilot">
+   <img src=".docs/github-cloud-sketch-fit.png" width=600 alt="github.dev">
 
 ## Setup
 
@@ -147,7 +147,8 @@ Compounding the urgency, you need to make the changes and you don't have the loc
      }
    };
    ```
-> Optional: Enter `<^> + <ENTER>` to see a list of suggestions that Copilot synthesizes for you!  This requires enabling CodeLens in Settings.
+
+   > Optional: Enter `<^> + <ENTER>` to see a list of suggestions that Copilot synthesizes for you! This requires enabling CodeLens in Settings.
 
 1. Open the browser tab, refresh, and see your changes worked!
 
@@ -182,9 +183,6 @@ Compounding the urgency, you need to make the changes and you don't have the loc
 
 > Let's look back at what we were able to accomplish, all without having the local dev environment. You can edit files, create a new branch, and merge a PR all from **github.dev** in the browser. Then when you need a robust dev invironment to run your application, you can continue working on it in Codespaces. Here you can debug it and use tools like GitHub Copilot to help write the code your app needs, all from within the browser.
 
-
 ## Credits
 
- - Thanks to [Nitya Narasimhan](https://github.com/nitya) for contributing the [Playwright](https://playwright.dev) Testing integration.
-
-
+- Thanks to [Nitya Narasimhan](https://github.com/nitya) for contributing the [Playwright](https://playwright.dev) Testing integration.
