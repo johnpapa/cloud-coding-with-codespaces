@@ -5,7 +5,7 @@
     // Update 'VARIANT' to pick a Node.js version: 10, 12
     "args": { "VARIANT": "16" }
   },
-  "forwardPorts": [7071, 4200, 4280],
+  "forwardPorts": [7071, 4200, 4280, 9323],
   "portsAttributes": {
     "localhost:4280": {
       "label": "SWA CLI Hosting the Angular App and API",
@@ -16,6 +16,9 @@
     },
     "4200": {
       "label": "Angular App"
+    },
+    "9323": {
+      "label": "Playwright"
     }
   },
 
