@@ -21,7 +21,15 @@ const data = {
       quantity: 21,
       imageClass: 'fas fa-apple-whole fa-3x',
     },
+    {
+      id: 40,
+      name: 'Hot Pepper',
+      description: '1 big pepper',
+      quantity: 1,
+      imageClass: 'fas fa-apple-whole fa-3x',
+    }
     // add another product here for hot peppers
+
   ],
 };
 
