@@ -1,14 +1,13 @@
 # Cloud Computing with Codespaces
 
-First seen in the presentation **One More Change!** @ [NgConf 2022](https://2022.ng-conf.org/)
-
 This is a project template for demonstrating github.dev, Codespaces, Co-pilot, Azure Static Web Apps, and Visual Studio Code.
 
 ## Top Features
 
 - Start quickly with github.dev: a fast, free and lightweight VS Code editor in the browser
 - Enjoy git integration to create branches and pull requests
-- Continue working on Codespaces to build, run and debug
+- Continue working on Codespaces to build, run, test and debug
+- Test your app with Playwright
 - Share your running app by forwarding ports
 - Extend your code with GitHub Copilot
 - Deploy your app to Azure Static Web Apps
@@ -155,6 +154,8 @@ Compounding the urgency, you need to make the changes and you don't have the loc
    > Copilot just helped you write the code to sort the products directly in Codespaces in the browser.
 
     <img src=".docs/final-app.png" width=600 alt="final app">
+
+1. Now let's run our end-to-end tests using Playwright to make sure we haven't broken anything, with `npm run test`.
 
 ### Merge your changes
 
