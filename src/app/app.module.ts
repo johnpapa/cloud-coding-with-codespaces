@@ -16,7 +16,7 @@ import { ProductsComponent } from './products.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' }),
+    RouterModule.forRoot(routes, {}),
     AppStoreModule,
     SharedModule,
     externalModules,
